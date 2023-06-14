@@ -1,93 +1,108 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Kunal's Personal Site</title>
-  </head>
-  <body>
+<html>
+<head>
+    <title>Simple Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 30px;
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fade-in 1s;
+        }
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            animation: rotate 3s infinite linear;
+        }
+        @keyframes rotate {
+           
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo.png" alt="Logo">
+        <h1>Welcome to our Website!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Serverless computing on AWS allows you to build and run applications without thinking about servers. With AWS Lambda, API Gateway, and other services, you can focus on your application code instead of managing infrastructure. By leveraging the scalability and flexibility of serverless architecture, you can develop efficient and cost-effective solutions.</p>
+        <p>Whether you're building web applications, data processing pipelines, or microservices, AWS provides a comprehensive suite of serverless services to support your development needs. With features like auto-scaling, pay-per-use pricing, and easy integration with other AWS services, serverless on AWS offers a powerful platform for modern application development.</p>
+        <a class="cta-button" href="#">Learn More</a>
+        <img src="serverless.png" alt="Serverless Image" style="width: 300px; height: auto;">
+    </div>
+    <footer>
+    <p>© 2023 Your Company. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript code can be added here for additional functionality
+    </script>
+</body>
+</html>    
 
-    <img src="kay.jpg" alt="sentient image">
-    <h1>Kunal Chaudhari</h1>
-    <p><em><a href="https://codepen.io/kpchaudhari/pen/jOBdoBq?editors=1000">Software Engineer</a></em></p>
-    <a href="contact.html">contact me</a>
-    <a href="table1.html">just click it</a>
-    <p>Firstly I am Mad and dull,Secondly, I am a student and I love to research about share and crypto market</p>
-    <hr>
 
 
-
-
-    <h3>Educations</h3>
-    <table  cellspacing="10">
-      <thead>
-        <th>Date</th>
-        <th>Education</th>
-      </thead>
-
-      <tr>
-        <td>2016-2018</td>
-        <td>Class 12</td>
-      </tr>
-      <tr>
-        <td>2018-2022</td>
-        <td>Engineering in Information Technology</td>
-      </tr>
-    </table>
-    <a href="table.html"><b>TABLE</b></a>
-  <hr>
-
-
-
-
-    <h3>Certifications</h3>
-    <ul>
-      <li>Complete Webdevlopment Bootcamp</li>
-      <li>ML Bootcamp</li>
-    </ul>
-<hr>
-
-
-
-
-    <h3>Skills</h3>
-    <a href="tableintable.html">Skills</a>
-    <table cellspacing="10">
-        <tr>
-          <td>C++</td>
-          <td>⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-          <td>Web Devlopment</td>
-          <td>⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-          <td>Java</td>
-          <td>⭐⭐⭐</td>
-        </tr>
-        <tr>
-          <td>Python</td>
-          <td>⭐⭐⭐</td>
-        </tr>
-
-      </table>
-<hr>
-
-
-
-
-
-    <h3>Hobbies</h3>
-    <ol>
-      <li>Reading Mythology Books and Books In Genral</li>
-      <li>Researching and Investing in share and crypto market</li>
-    </ol><a href="hobbies.html">hobbies</a>
-<hr>
-
-
-
-
-
-
-
-  </body>
-</html>
